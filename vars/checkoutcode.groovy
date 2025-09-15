@@ -1,5 +1,5 @@
-def call(String branch = "master") {
+def call(String branch = "master" , String url = "ssh://git@bitbucket.temenos.com:7999/tc/tbac-registry.git") {
     git branch: branch,
         credentialsId: "wsltobitbucket",
-        url: "ssh://git@bitbucket.temenos.com:7999/tc/tbac-registry.git"
+        url: url
 }
